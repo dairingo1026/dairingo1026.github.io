@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>だいりんごのサイト</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>だいりんごのサイト</h1>
-    <h3>概要</h3>
-    <p>だいりんごのサイトです</p>
-    <h3>プロフィール</h3>
-    <p>いろいろやる人です</p>
-    <h3>日記</h3>
-    <p>2026/09/03　サイトを作成！！頑張りました</p>
+    <header>
+        <a href="#" class="logo">MY WEBSITE</a>
+        <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#works">WORKS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <p class="small-text">WELCOME TO MY WEBSITE</p>
+            <h1>Hello,<br>I'm <span>YOUR NAME</span>.</h1>
+            <p class="description">
+                シンプルなデザインと、ものづくりが好きです。
+            </p>
+        </section>
+        <section id="about" class="section">
+            <p class="section-number">01</p>
+            <h2>ABOUT</h2>
+            <p>
+                ここに自己紹介を書きます。<br>
+                自分のことや好きなこと、活動していることなどを紹介します。
+            </p>
+        </section>
+        <section id="works" class="section">
+            <p class="section-number">02</p>
+            <h2>WORKS</h2>
+            <p>
+                ここに制作したものやプロジェクトを載せます。
+            </p>
+        </section>
+        <section id="contact" class="section">
+            <p class="section-number">03</p>
+            <h2>CONTACT</h2>
+            <p>
+                連絡先やSNSなどをここに載せます。
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 YOUR NAME</p>
+    </footer>
 </body>
 </html>
