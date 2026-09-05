@@ -6,9 +6,10 @@
 }
 
 
-
-html {
-    scroll-behavior: smooth;
+html,
+body {
+    width: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -23,192 +24,84 @@ body {
         "Hiragino Sans",
         Arial,
         sans-serif;
-
-    line-height: 1.8;
-}
-
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 30px 6%;
-
-    border-bottom: 1px solid #ddd;
-}
-
-.logo {
-    color: #111;
-    text-decoration: none;
-
-    font-size: 14px;
-    font-weight: 700;
-
-    letter-spacing: 0.08em;
-}
-
-nav {
-    display: flex;
-    gap: 30px;
-}
-
-nav a {
-    color: #111;
-    text-decoration: none;
-
-    font-size: 12px;
-    letter-spacing: 0.15em;
-
-    transition: opacity 0.2s ease;
-}
-
-nav a:hover {
-    opacity: 0.45;
 }
 
 
 
 .hero {
-    min-height: 80vh;
+    width: 100%;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    padding: 8% 12%;
+    padding: 6vw;
 }
 
-.small-text {
-    margin-bottom: 25px;
+
+
+.welcome {
+    margin-bottom: 2vw;
+
+    font-size: clamp(10px, 1vw, 14px);
+    font-weight: 600;
+
+    letter-spacing: 0.35em;
 
     color: #777;
-
-    font-size: 11px;
-    letter-spacing: 0.2em;
 }
 
+
+
 .hero h1 {
-    font-size: clamp(60px, 10vw, 130px);
+    font-size: clamp(80px, 15vw, 240px);
 
     font-weight: 700;
-    line-height: 1.05;
 
-    letter-spacing: -0.05em;
+    line-height: 0.88;
+
+    letter-spacing: -0.07em;
 }
 
 .hero h1 span {
     color: #777;
 }
 
-.description {
-    margin-top: 40px;
 
-    color: #666;
 
-    font-size: 14px;
+.hero h1 {
+    transition: letter-spacing 0.4s ease;
 }
 
-
-
-.section {
-    max-width: 1000px;
-
-    margin: 0 auto;
-
-    padding: 150px 40px;
-
-    border-top: 1px solid #ddd;
-}
-
-.section-number {
-    margin-bottom: 20px;
-
-    color: #888;
-
-    font-size: 12px;
-    letter-spacing: 0.1em;
-}
-
-.section h2 {
-    margin-bottom: 40px;
-
-    font-size: 48px;
-    font-weight: 700;
-
-    line-height: 1;
-
-    letter-spacing: -0.03em;
-}
-
-.section p {
-    color: #555;
-
-    font-size: 15px;
-}
-
-
-
-.link {
-    color: #111;
-
-    text-decoration: none;
-
-    border-bottom: 1px solid #111;
-
-    transition:
-        color 0.2s ease,
-        opacity 0.2s ease;
-}
-
-.link:hover {
-    opacity: 0.5;
+.hero h1:hover {
+    letter-spacing: -0.04em;
 }
 
 
 
 @media (max-width: 600px) {
 
-    header {
-        padding: 25px 6%;
+    .hero {
+        padding: 8vw;
     }
 
-    nav {
-        gap: 15px;
-    }
+    .welcome {
+        margin-bottom: 7vw;
 
-    nav a {
         font-size: 10px;
     }
 
-    .logo {
-        font-size: 12px;
-    }
-
-    .hero {
-        min-height: 70vh;
-
-        padding: 15% 8%;
-    }
-
     .hero h1 {
-        font-size: 58px;
+        font-size: clamp(64px, 18vw, 110px);
+
+        line-height: 0.9;
+
+        letter-spacing: -0.06em;
     }
 
-    .description {
-        margin-top: 30px;
+    .hero h1:hover {
+        letter-spacing: -0.06em;
     }
 
-    .section {
-        padding: 100px 25px;
-    }
-
-    .section h2 {
-        font-size: 40px;
-    }
-
-    .section p {
-        font-size: 14px;
-    }
 }
