@@ -27,7 +27,6 @@ body {
 }
 
 
-
 .hero {
     width: 100%;
     min-height: 100vh;
@@ -55,6 +54,8 @@ body {
 
 
 .hero h1 {
+    color: #111;
+
     font-size: clamp(80px, 15vw, 240px);
 
     font-weight: 700;
@@ -62,17 +63,17 @@ body {
     line-height: 0.88;
 
     letter-spacing: -0.07em;
-}
 
-.hero h1 span {
-    color: #777;
-}
-
-
-
-.hero h1 {
     transition: letter-spacing 0.4s ease;
 }
+
+
+
+.hero h1 .gray {
+    color: #888;
+}
+
+
 
 .hero h1:hover {
     letter-spacing: -0.04em;
@@ -88,7 +89,6 @@ body {
 
     .welcome {
         margin-bottom: 7vw;
-
         font-size: 10px;
     }
 
@@ -103,5 +103,4 @@ body {
     .hero h1:hover {
         letter-spacing: -0.06em;
     }
-
 }
