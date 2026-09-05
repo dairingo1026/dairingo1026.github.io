@@ -6,6 +6,7 @@
 }
 
 
+
 html,
 body {
     width: 100%;
@@ -27,6 +28,7 @@ body {
 }
 
 
+
 .hero {
     width: 100%;
     min-height: 100vh;
@@ -43,12 +45,12 @@ body {
 .welcome {
     margin-bottom: 2vw;
 
+    color: #777;
+
     font-size: clamp(10px, 1vw, 14px);
     font-weight: 600;
 
     letter-spacing: 0.35em;
-
-    color: #777;
 }
 
 
@@ -57,26 +59,16 @@ body {
     color: #111;
 
     font-size: clamp(80px, 15vw, 240px);
-
     font-weight: 700;
 
     line-height: 0.88;
-
     letter-spacing: -0.07em;
-
-    transition: letter-spacing 0.4s ease;
 }
 
 
 
 .hero h1 .gray {
     color: #888;
-}
-
-
-
-.hero h1:hover {
-    letter-spacing: -0.04em;
 }
 
 
@@ -89,6 +81,7 @@ body {
 
     .welcome {
         margin-bottom: 7vw;
+
         font-size: 10px;
     }
 
@@ -96,11 +89,6 @@ body {
         font-size: clamp(64px, 18vw, 110px);
 
         line-height: 0.9;
-
-        letter-spacing: -0.06em;
-    }
-
-    .hero h1:hover {
         letter-spacing: -0.06em;
     }
 }
